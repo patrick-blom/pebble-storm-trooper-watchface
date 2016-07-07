@@ -1,0 +1,40 @@
+{
+    "name": "StormTrooperWatchface",
+    "author": "MakeAwesomeHappen",
+    "version": "1.0.0",
+    "keywords": ["pebble-app"],
+    "private": true,
+    "dependencies": {},
+    "pebble": {
+        "displayName": "StormTrooperWatchface",
+        "uuid": "5bfd1b68-aabb-427a-9a6f-a16aaf52677b",
+        "sdkVersion": "3",
+        "enableMultiJS": true,
+        "targetPlatforms": [
+                            "aplite",
+                            "basalt",
+                            "chalk"
+                            ],
+        "watchapp": {
+            "watchface": true
+        },
+        "messageKeys": [
+                        "dummy"
+                        ],
+        "resources": {
+            "media": [
+                      {
+                      "type": "font",
+                      "name": "FONT_START_JEDI_20",
+                      "file": "fonts/Starjedi.ttf",
+                      "compatibility":"2.7"
+                      },
+                      {
+                      "type": "bitmap",
+                      "name": "IMAGE_BACKGROUND",
+                      "file": "images/storm_trooper_head.png"
+                      }
+                      ]
+        }
+    }
+}
