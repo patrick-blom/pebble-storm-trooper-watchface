@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3F832A0C1D2EE58400FDE209 /* StormTrooperWatchface.c in Sources */ = {isa = PBXBuildFile; fileRef = 3F68B3C11D2865F40051D882 /* StormTrooperWatchface.c */; };
+		3F832A1D1D34261900FDE209 /* time_service.c in Sources */ = {isa = PBXBuildFile; fileRef = 3F832A161D34261900FDE209 /* time_service.c */; };
+		3F832A1E1D34261900FDE209 /* ui_layers.c in Sources */ = {isa = PBXBuildFile; fileRef = 3F832A181D34261900FDE209 /* ui_layers.c */; };
+		3F832A1F1D34261900FDE209 /* main_window.c in Sources */ = {isa = PBXBuildFile; fileRef = 3F832A1B1D34261900FDE209 /* main_window.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +42,12 @@
 		3F832A041D2EE3BF00FDE209 /* Basalt */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Basalt; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F832A0F1D2EE87200FDE209 /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
 		3F832A141D2EFB2C00FDE209 /* storm_trooper_head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = storm_trooper_head.png; path = images/storm_trooper_head.png; sourceTree = "<group>"; };
+		3F832A161D34261900FDE209 /* time_service.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = time_service.c; sourceTree = "<group>"; };
+		3F832A171D34261900FDE209 /* time_service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = time_service.h; sourceTree = "<group>"; };
+		3F832A181D34261900FDE209 /* ui_layers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ui_layers.c; sourceTree = "<group>"; };
+		3F832A191D34261900FDE209 /* ui_layers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ui_layers.h; sourceTree = "<group>"; };
+		3F832A1B1D34261900FDE209 /* main_window.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main_window.c; sourceTree = "<group>"; };
+		3F832A1C1D34261900FDE209 /* main_window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main_window.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +82,8 @@
 		3F68B3C01D2865F40051D882 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				3F832A1A1D34261900FDE209 /* windows */,
+				3F832A151D34261900FDE209 /* modules */,
 				3F68B3C11D2865F40051D882 /* StormTrooperWatchface.c */,
 			);
 			path = src;
@@ -110,6 +121,26 @@
 				3F832A141D2EFB2C00FDE209 /* storm_trooper_head.png */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		3F832A151D34261900FDE209 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				3F832A161D34261900FDE209 /* time_service.c */,
+				3F832A171D34261900FDE209 /* time_service.h */,
+				3F832A181D34261900FDE209 /* ui_layers.c */,
+				3F832A191D34261900FDE209 /* ui_layers.h */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		3F832A1A1D34261900FDE209 /* windows */ = {
+			isa = PBXGroup;
+			children = (
+				3F832A1B1D34261900FDE209 /* main_window.c */,
+				3F832A1C1D34261900FDE209 /* main_window.h */,
+			);
+			path = windows;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,7 +237,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F832A1D1D34261900FDE209 /* time_service.c in Sources */,
 				3F832A0C1D2EE58400FDE209 /* StormTrooperWatchface.c in Sources */,
+				3F832A1F1D34261900FDE209 /* main_window.c in Sources */,
+				3F832A1E1D34261900FDE209 /* ui_layers.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

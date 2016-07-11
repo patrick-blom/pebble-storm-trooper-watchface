@@ -1,4 +1,8 @@
 #include <pebble.h>
+#include "modules/time_service.h"
+#include "modules/ui_layers.h"
+#include "windows/main_window.h"
+
 
 static Window *s_main_window;
 
@@ -10,21 +14,8 @@ static BitmapLayer *s_background_layer;
 
 static GBitmap *s_backgroud_bitmap;
 
-static void update_time(){
-    // Get an tim structure
-    time_t temp = time(NULL);
-    struct tm *tick_time = localtime(&temp);
-    
-    // Write the current hours an minutes into the buffer
-    static char s_buffer[8];
-    strftime(s_buffer, sizeof(s_buffer), clock_is_24h_style() ? "%H:%M" : "%I:%M", tick_time);
-    
-    // Display the time on the text layer
-    text_layer_set_text(s_time_layer, s_buffer);
-}
-
 static void tick_handler(struct tm *tick_time, TimeUnits units_changed){
-    update_time();
+   s_time_layer = update_time(s_time_layer);
 }
 
 static void main_window_load(Window *window){
@@ -50,7 +41,7 @@ static void main_window_load(Window *window){
     s_time_layer = text_layer_create(GRect(0, PBL_IF_ROUND_ELSE(38,32),bounds.size.w,50));
     
     // set the time
-    update_time();
+    s_time_layer = update_time(s_time_layer);
     
     // Improve the text layer
     text_layer_set_background_color(s_time_layer, GColorClear);
