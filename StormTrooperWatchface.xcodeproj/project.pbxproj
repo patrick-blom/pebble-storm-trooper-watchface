@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F832A0C1D2EE58400FDE209 /* StormTrooperWatchface.c in Sources */ = {isa = PBXBuildFile; fileRef = 3F68B3C11D2865F40051D882 /* StormTrooperWatchface.c */; };
+		3F832A0C1D2EE58400FDE209 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 3F68B3C11D2865F40051D882 /* main.c */; };
 		3F832A1D1D34261900FDE209 /* time_service.c in Sources */ = {isa = PBXBuildFile; fileRef = 3F832A161D34261900FDE209 /* time_service.c */; };
 		3F832A1E1D34261900FDE209 /* ui_layers.c in Sources */ = {isa = PBXBuildFile; fileRef = 3F832A181D34261900FDE209 /* ui_layers.c */; };
 		3F832A1F1D34261900FDE209 /* main_window.c in Sources */ = {isa = PBXBuildFile; fileRef = 3F832A1B1D34261900FDE209 /* main_window.c */; };
@@ -37,10 +37,10 @@
 /* Begin PBXFileReference section */
 		3F68B3BE1D2865680051D882 /* HiddenTarget */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HiddenTarget; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F68B3BF1D2865F40051D882 /* package.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = package.json; sourceTree = "<group>"; };
-		3F68B3C11D2865F40051D882 /* StormTrooperWatchface.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = StormTrooperWatchface.c; sourceTree = "<group>"; };
+		3F68B3C11D2865F40051D882 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		3F68B3C21D2865F40051D882 /* wscript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wscript; sourceTree = "<group>"; };
 		3F832A041D2EE3BF00FDE209 /* Basalt */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Basalt; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F832A0F1D2EE87200FDE209 /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
+		3F832A0F1D2EE87200FDE209 /* starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = starjedi.ttf; sourceTree = "<group>"; };
 		3F832A141D2EFB2C00FDE209 /* storm_trooper_head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = storm_trooper_head.png; path = images/storm_trooper_head.png; sourceTree = "<group>"; };
 		3F832A161D34261900FDE209 /* time_service.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = time_service.c; sourceTree = "<group>"; };
 		3F832A171D34261900FDE209 /* time_service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = time_service.h; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 			children = (
 				3F832A1A1D34261900FDE209 /* windows */,
 				3F832A151D34261900FDE209 /* modules */,
-				3F68B3C11D2865F40051D882 /* StormTrooperWatchface.c */,
+				3F68B3C11D2865F40051D882 /* main.c */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -110,7 +110,7 @@
 		3F832A0E1D2EE87200FDE209 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				3F832A0F1D2EE87200FDE209 /* Starjedi.ttf */,
+				3F832A0F1D2EE87200FDE209 /* starjedi.ttf */,
 			);
 			path = fonts;
 			sourceTree = "<group>";
@@ -238,7 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F832A1D1D34261900FDE209 /* time_service.c in Sources */,
-				3F832A0C1D2EE58400FDE209 /* StormTrooperWatchface.c in Sources */,
+				3F832A0C1D2EE58400FDE209 /* main.c in Sources */,
 				3F832A1F1D34261900FDE209 /* main_window.c in Sources */,
 				3F832A1E1D34261900FDE209 /* ui_layers.c in Sources */,
 			);

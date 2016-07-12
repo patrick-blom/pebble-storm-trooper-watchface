@@ -1,5 +1,9 @@
 #include "time_service.h"
 
+/**
+ * this method will fetch the 
+ * local time and paste it on a given text layer
+ */
 TextLayer* update_time(TextLayer *text_layer){
     // Get an tim structure
     time_t temp = time(NULL);
